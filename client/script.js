@@ -107,8 +107,7 @@ const handleSubmit = async (e) => {
       const data = await response.json();
       //bot is prop we sent in server
       const parseData = data.bot.trim();
-
-     typeText(messageDiv, parseData);
+      typeText(messageDiv, parseData);
     }
   else{
     console.log(response)

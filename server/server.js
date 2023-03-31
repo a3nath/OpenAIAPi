@@ -16,8 +16,6 @@ const config = new Configuration({
 const openai = new OpenAIApi(config);
 
 
-
-
 app.get('/', async (req, res) => {
     res.status(200).send({
         message: "Hello there"
@@ -44,7 +42,6 @@ app.post('/', async(req, res) => {
     } catch (error) {
         console.log(error)
         res.status(500).send({error})
-        
     }
 })
 
